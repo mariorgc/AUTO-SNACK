@@ -1,0 +1,181 @@
+
+/* =================================
+CONFIGURACIÓN GENERAL
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f5f9;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #1e293b;
+}
+
+/* =================================
+ENCABEZADO
+================================= */
+header {
+    background: linear-gradient(135deg, #1e293b, #334155);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: #cbd5e1;
+}
+
+/* =================================
+TARJETAS DE PRODUCTOS
+================================= */
+.product-card {
+    height: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    border-color: #f59e0b;
+}
+
+.product-image {
+    font-size: 3rem;
+    padding: 15px 0;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.product-card h3 {
+    font-weight: 600;
+    min-height: 35px;
+}
+
+.product-card p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+/* =================================
+BOTONES
+================================= */
+.product-card .btn {
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.product-card .btn:hover {
+    background-color: #f59e0b;
+    border-color: #f59e0b;
+    color: #1e293b;
+}
+
+button {
+    transition: all 0.2s ease;
+}
+
+/* =================================
+PANEL DE CONTROL
+================================= */
+aside .card {
+    border: none;
+    border-radius: 14px;
+}
+
+aside h2 {
+    color: #1e293b;
+}
+
+/* =================================
+PANTALLA DIGITAL
+================================= */
+.machine-screen {
+    background-color: #172554;
+    color: #67e8f9;
+    border: 3px solid #334155;
+    min-height: 125px;
+    overflow-wrap: anywhere;
+}
+
+.machine-screen small {
+    color: #94a3b8;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.machine-screen h3 {
+    color: #67e8f9;
+}
+
+.machine-screen p {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+/* =================================
+ÁREA DE ENTREGA
+================================= */
+.delivery-area {
+    background-color: #e2e8f0;
+    border: 2px dashed #94a3b8;
+    color: #475569;
+    min-height: 130px;
+}
+
+.delivery-area i {
+    color: #64748b;
+}
+
+/* =================================
+PIE DE PÁGINA
+================================= */
+footer {
+    background-color: #1e293b;
+    color: #cbd5e1;
+}
+
+/* =================================
+DISEÑO RESPONSIVO
+================================= */
+@media (max-width: 576px) {
+
+    header h1 {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+    }
+
+    header p {
+        font-size: 0.85rem;
+    }
+
+    .product-image {
+        font-size: 2.5rem;
+    }
+
+    .product-card h3 {
+        font-size: 1rem;
+    }
+
+    .product-card p {
+        font-size: 1rem;
+    }
+
+    .machine-screen {
+        min-height: 115px;
+    }
+
+    .delivery-area {
+        min-height: 110px;
+    }
+}
